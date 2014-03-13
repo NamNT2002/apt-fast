@@ -23,9 +23,8 @@ echo "Install apt-fast"
 apt-get install apt-fast axel -y
 clear
 echo "Setting apt-fast"
-cd /etc/
 rm -rf /etc/apt-fast.conf
-wget -cnv https://raw.github.com/NamNT2002/apt-fast/master/apt-fast.conf
+mv apt-fast.conf /etc/apt-fast.conf
 chmod 644 /etc/apt-fast.conf
 rm -rf /tmp/apt-fast.list
 touch /tmp/apt-fast.list
