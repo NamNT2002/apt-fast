@@ -34,8 +34,8 @@ echo "update souces list for apt-fast"
 apt-fast update
 rm -rf /tmp/apt-fast.list
 touch /tmp/apt-fast.list
-cd
-source .bashrc
 clear
 echo "Install success full"
+echo "Go: source ~/.bashrc"
+echo "De hoan thanh qua trinh cai dat"
 echo "Thanks!"
