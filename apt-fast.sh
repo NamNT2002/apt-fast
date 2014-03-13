@@ -22,17 +22,19 @@ clear
 echo "Install apt-fast"
 apt-get install apt-fast axel -y
 clear
+echo "success install apt-fast"
+sleep 3
 echo "Setting apt-fast"
 rm -rf /etc/apt-fast.conf
 mv apt-fast.conf /etc/apt-fast.conf
 chmod 644 /etc/apt-fast.conf
-rm -rf /tmp/apt-fast.list
-touch /tmp/apt-fast.list
 chmod -R 777 /tmp/apt-fast.list
 echo "alias apt-get='apt-fast'" >> ~/.bashrc 
 source ~/.bashrc 
 echo "update souces list for apt-fast"
 apt-fast update
+rm -rf /tmp/apt-fast.list
+touch /tmp/apt-fast.list
 clear
 echo "Install success full"
 echo "Thanks!"
