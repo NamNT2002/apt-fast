@@ -14,6 +14,7 @@ echo "add soucers list ....."
 add-apt-repository ppa:apt-fast/stable << eof
 
 eof
+sleep 2
 clear
 echo ""
 echo "update soucers list...."
