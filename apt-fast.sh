@@ -30,11 +30,12 @@ mv apt-fast.conf /etc/apt-fast.conf
 chmod 644 /etc/apt-fast.conf
 chmod -R 777 /tmp/apt-fast.list
 echo "alias apt-get='apt-fast'" >> ~/.bashrc 
-source ~/.bashrc 
 echo "update souces list for apt-fast"
 apt-fast update
 rm -rf /tmp/apt-fast.list
 touch /tmp/apt-fast.list
+cd
+source .bashrc
 clear
 echo "Install success full"
 echo "Thanks!"
