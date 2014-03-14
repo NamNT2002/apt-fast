@@ -30,13 +30,13 @@ rm -rf /etc/apt-fast.conf
 mv apt-fast.conf /etc/apt-fast.conf
 chmod 644 /etc/apt-fast.conf
 chmod -R 777 /tmp/apt-fast.list
-echo "alias apt-get='apt-fast'" >> ~/.bashrc 
+# echo "alias apt-get='apt-fast'" >> ~/.bashrc 
 echo "update souces list for apt-fast"
 apt-fast update
 rm -rf /tmp/apt-fast.list
 touch /tmp/apt-fast.list
 clear
 echo "Install success full"
-echo "Go: source ~/.bashrc"
+#echo "Go: source ~/.bashrc"
 echo "De hoan thanh qua trinh cai dat"
 echo "Thanks!"
