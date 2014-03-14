@@ -12,6 +12,6 @@ cd apt-fast && sh apt-fast.sh
 Chú ý: nếu bạn muốn thay thế apt-get hoàn toàn thành apt-fast thì bạn thực hiện thêm lệnh sau:
 
 ===========================================================
-|        echo "alias apt-get='apt-fast'" >> ~/.bashrc     |
-|        source ~/.bashrc                                 |
+        echo "alias apt-get='apt-fast'" >> ~/.bashrc     
+        source ~/.bashrc                                 
 ===========================================================
